@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sap-o2c-api
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r server/requirements.txt
+    startCommand: cd server && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: PYTHON_VERSION
+        value: "3.11.11"

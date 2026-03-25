@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment Variables
+.env
+.env.local
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+o2c.db
+*.pdf
+
+# Build outputs
+client/dist/
+client/build/
+server/.cache/
+
+# OS/Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Cursor
+.cursor/
+.vercel
